@@ -3,11 +3,12 @@ session_start();
 $_SESSION['site-title'] = 'List Blog';
 require_once('../connection.php');
 require_once('header.php');
-$query = "SELECT blogs.id,full_name,title,description,blogs.created_at 
+$query = "SELECT blogs.id,img_url,full_name,title,description,blogs.created_at 
 FROM blogs 
 INNER JOIN users ON users.id = user_id WHERE blogs.id = ?";
 $blog = fetch_record($query, $_GET['id']);
 // var_dump($blog);
+var_dump($_GET['id']);
 ?>
 <!-- Main content -->
 <section class="content">
@@ -26,7 +27,12 @@ $blog = fetch_record($query, $_GET['id']);
                         </span></p>
                 </div>
                 <div class="box-body">
-                    <p>
+                    <?php if(!is_null($blog['img_url'])) {?>
+                    <div class="text-center">
+                        <img src="<?= $blog['img_url'] ?>" alt="image header" style="width: 300px; height:300px;">
+                    </div>
+                    <?php }?>
+                    <p class='text-start'>
                         <?= $blog['description'] ?>
                     </p>
                 </div>

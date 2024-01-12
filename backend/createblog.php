@@ -1,4 +1,5 @@
-<?php session_start();
+<?php 
+session_start();
 $_SESSION['site-title'] = 'Create Blog';
 require_once('header.php') ?>
 <!-- Main content -->
@@ -13,20 +14,21 @@ require_once('header.php') ?>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form action="events.php" role="form" enctype="multipart/form-data">
+                <form action="events.php" method="post" role="form" enctype="multipart/form-data">
                     <input type="hidden" name="event" value="create_blog">
                     <div class="box-body">
+                        <p class='text-danger'><?= is_null($_SESSION['error_msg']) ? "" : $_SESSION['error_msg']?></p>
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Title">
+                            <input type="text" name="title" class="form-control" id="title" placeholder="Title">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Description</label>
-                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                            <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">Image</label>
-                            <input type="file" id="exampleInputFile">
+                            <label for="imgFile">Image</label>
+                            <input type="file" id="imgFile" name='img_url'>
 
                         </div>
                     </div>

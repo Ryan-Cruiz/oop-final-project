@@ -87,7 +87,7 @@
                 <div class="section-body">
                     <!-- This section will be the list of blogs -->
                     <?php foreach($blogs as $blog){?>
-                    <div class="card">
+                    <div class="card m-2">
                         <div class="card-body">
                             <h4 class="card-title"><?= $blog['title']?></h4>
                             <p class="card-subtitle mb-2"><span class="text-muted"><?= date_format(date_create($blog['created_at']),"F d, Y")?></span></p>

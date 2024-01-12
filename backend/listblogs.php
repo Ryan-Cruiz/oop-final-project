@@ -16,7 +16,7 @@ $blogs = fetch_all($query);
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">Blogs</h3>
-
+                    <p class='text-success'><?= is_null($_SESSION['success_msg']) ? "" : $_SESSION['success_msg']?></p>
                     <!-- <div class="box-tools">
                         <div class="input-group input-group-sm" style="width: 150px;">
                             <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
@@ -28,6 +28,7 @@ $blogs = fetch_all($query);
                     </div> -->
                 </div>
                 <!-- /.box-header -->
+                
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
                         <tr>

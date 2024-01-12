@@ -1,5 +1,5 @@
 <?php
-$connection = new PDO('sqlite:'.__DIR__.'/database.db');
+$connection = new PDO('sqlite:' . __DIR__ . '/database.db');
 if ($connection == null)
     // echo 'Connected to the SQLite database successfully!';
     echo 'Whoops, could not connect to the SQLite database!';
@@ -8,8 +8,7 @@ if ($connection == null)
 /*----------------------DATABASE QUERYING FUNCTIONS-----------------------*/
 //SELECT - used when expecting single OR multiple results
 //returns an array that contains one or more associative arrays
-function fetch_all($query)
-{
+function fetch_all($query) {
     $data = array();
     global $connection;
     $stmt = $connection->query($query);
@@ -20,11 +19,10 @@ function fetch_all($query)
 }
 //SELECT - used when expecting a single result
 //returns an associative array
-function fetch_record($query,$id = 0)
-{
+function fetch_record($query, $id = 0) {
     global $connection;
     $stmt = $connection->prepare($query);
-    if (!$id == 0){
+    if (!$id == 0) {
         $stmt->execute([$id]);
         return $stmt->fetch();
     }
@@ -32,16 +30,15 @@ function fetch_record($query,$id = 0)
 }
 //used to run INSERT/DELETE/UPDATE, queries that don't return a value
 //returns a value, the id of the most recently inserted record in your database
-function run_mysql_query($query)
-{
+function run_mysql_query($query) {
     global $connection;
     $result = $connection->query($query);
-    return $connection->insert_id;
+    return $connection->lastInsertId;
+}
+function queryData($query,$data){
+    global $connection;
+    $stmt= $connection->prepare($query);
+    $stmt->execute($data);
 }
 //returns an escaped string. EG, the string "That's crazy!" will be returned as "That\'s crazy!"
 //also helps secure your database against SQL injection
-function escape_this_string($string)
-{
-    global $connection;
-    return $connection->real_escape_string($string);
-}
