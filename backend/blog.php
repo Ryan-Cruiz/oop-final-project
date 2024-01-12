@@ -8,7 +8,6 @@ FROM blogs
 INNER JOIN users ON users.id = user_id WHERE blogs.id = ?";
 $blog = fetch_record($query, $_GET['id']);
 // var_dump($blog);
-var_dump($_GET['id']);
 ?>
 <!-- Main content -->
 <section class="content">

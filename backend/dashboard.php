@@ -114,10 +114,11 @@ $users = fetch_all($queryUsers);
                                 <td>
                                     <?= date_format(date_create($blog['created_at']), "F d, Y @ g:i A") ?>
                                 </td>
-                                <td><a class="btn btn-warning">
+                                <td><a href="updateblog.php?id=<?= $blog['id'] ?>" class="btn btn-warning">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <a class="btn btn-danger">
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"
+                                        data-id="<?= $blog['id'] ?>">
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 </td>
@@ -127,55 +128,96 @@ $users = fetch_all($queryUsers);
                 </div>
                 <!-- /.box-body -->
             </div>
-            <!-- DTO KAYO MAGLALAGAY NG CONTENT DPENDE SA COLUMN N ILALAGAY NIU KAYO NA MAGHATI-->
-        </div>
-        <div class="col-xs-12">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Users</h3>
+            <!-- /.box -->
+            <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel">
+                <div class="modal-dialog" role="document">
+                    <form action="events.php" method='post' class="modal-content">
+                        <input type="hidden" name="data_id" value="">
+                        <input type="hidden" name="event" value="delete_blog">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="deleteModalLabel">Delete Record</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class='fw-bold'>Do you want to delete this item?</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-danger" value="Yes, Delete this Record">
+                        </div>
+                    </form>
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body table-responsive no-padding">
-                    <table class="table table-hover">
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Blogs</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Date Created</th>
+                        <th>Action</th>
+                    </tr>
+                    <?php foreach ($users as $user) { ?>
                         <tr>
-                            <th>ID</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Date Created</th>
-                            <th>Action</th>
+                            <td>
+                                <?= $user['id'] ?>
+                            </td>
+                            <td>
+                                <a href="user.php?id=<?= $user['id'] ?>">
+                                    <?= $user['full_name'] ?>
+                                </a>
+                            </td>
+                            <td>
+                                <?= $user['email'] ?>
+                            </td>
+                            <td>
+                                <?= date_format(date_create($user['created_at']), "F d, Y @ g:i A") ?>
+                            </td>
+                            <td><a href="updateUser.php?id=<?= $user['id'] ?>" class="btn btn-warning">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"
+                                    data-id="<?= $user['id'] ?>">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
                         </tr>
-                        <?php foreach ($users as $user) { ?>
-                            <tr>
-                                <td>
-                                    <?= $user['id'] ?>
-                                </td>
-                                <td>
-                                    <a href="user.php?id=<?= $user['id'] ?>">
-                                        <?= $user['full_name'] ?>
-                                    </a>
-                                </td>
-                                <td>
-                                    <?= $user['email'] ?>
-                                </td>
-                                <td>
-                                    <?= date_format(date_create($user['created_at']), "F d, Y @ g:i A") ?>
-                                </td>
-                                <td><a class="btn btn-warning">
-                                        <i class="fa fa-edit"></i>
-                                    </a>
-                                    <a class="btn btn-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php } ?>
-                    </table>
-                </div>
-                <!-- /.box-body -->
+                    <?php } ?>
+                </table>
             </div>
-
+            <!-- /.box-body -->
         </div>
-
+        <!-- /.box -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel">
+            <div class="modal-dialog" role="document">
+                <form action="events.php" method='post' class="modal-content">
+                    <input type="hidden" name="data_id" value="">
+                    <input type="hidden" name="event" value="delete_user">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="deleteModalLabel">Delete Record</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class='fw-bold'>Do you want to delete this item?</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-danger" value="Yes, Delete this Record">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- /.content -->
 <?php require_once('footer.php'); ?>
