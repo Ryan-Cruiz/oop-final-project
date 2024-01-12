@@ -43,7 +43,7 @@
     $passwordRepeat= $_POST["Retype_password"];
 
     $passwordhash = password_hash($password, PASSWORD_DEFAULT);
-    
+
     $errors = array();
 
     if (empty($fullname) OR empty($email) OR empty($password) OR empty($passwordRepeat)) {
@@ -68,10 +68,12 @@
     }
     }else{
       //we will insert data into database
+      //we live we love we lie
 
     }
   }
   ?>
+
 
     <form action="register.php" method="post">
       <div class="form-group has-feedback">
