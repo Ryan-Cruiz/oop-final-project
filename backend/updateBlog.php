@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 $_SESSION['site-title'] = 'Update Blog';
 require_once('../connection.php');
@@ -18,18 +18,22 @@ $blog = fetch_record($query, $_GET['id']);
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form action="events.php" method="post" role="form" >
+                <form action="events.php" method="post" role="form">
                     <input type="hidden" name="event" value="update_blog">
-                    <input type="hidden" name="id" value="<?= $_GET['id']?>">
+                    <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
                     <div class="box-body">
-                        <p class='text-danger'><?= empty($_SESSION['error_msg']) ? ($_SESSION['error_msg'] = '') : $_SESSION['error_msg']?></p>
+                        <p class='text-danger'>
+                            <?= !isset($_SESSION['error_msg']) || empty($_SESSION['error_msg']) ? "" : $_SESSION['error_msg'] ?>
+                        </p>
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" name="title" value="<?= $blog['title']?>" class="form-control" id="title" placeholder="Title">
+                            <input type="text" name="title" value="<?= $blog['title'] ?>" class="form-control" id="title"
+                                placeholder="Title">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Description</label>
-                            <textarea class="form-control"  name="description" id="" cols="30" rows="10"><?= $blog['description']?></textarea>
+                            <textarea class="form-control" name="description" id="" cols="30"
+                                rows="10"><?= $blog['description'] ?></textarea>
                         </div>
                     </div>
                     <!-- /.box-body -->
@@ -47,4 +51,4 @@ $blog = fetch_record($query, $_GET['id']);
 
 </section>
 <!-- /.content -->
-<?php require_once('footer.php');?>
+<?php require_once('footer.php'); ?>

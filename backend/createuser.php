@@ -16,7 +16,7 @@ require_once('header.php');
                 <!-- form start -->
                 <form role="form" method="post" action="events.php">
                     <div class="box-body">
-                    <p class='text-danger'><?= empty($_SESSION['error_msg']) ? ($_SESSION['error_msg'] = '') : $_SESSION['error_msg']?></p>
+                    <p class='text-danger'><?= empty($_SESSION['error_msg']) ? "" : $_SESSION['error_msg']?></p>
                         <input type="hidden" name="event" value="create_user">
                         <div class="form-group has-feedback">
                             <input type="text" name="full_name" class="form-control" placeholder="Full name" value="<?= empty($_GET['full_name']) ? "" : $_GET['full_name']?>">

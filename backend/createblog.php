@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 $_SESSION['site-title'] = 'Create Blog';
 require_once('header.php') ?>
@@ -17,7 +17,9 @@ require_once('header.php') ?>
                 <form action="events.php" method="post" role="form" enctype="multipart/form-data">
                     <input type="hidden" name="event" value="create_blog">
                     <div class="box-body">
-                        <p class='text-danger'><?= empty($_SESSION['error_msg']) ? ($_SESSION['error_msg'] = '') : $_SESSION['error_msg']?></p>
+                        <p class='text-danger'>
+                            <?= !isset($_SESSION['error_msg']) || empty($_SESSION['error_msg']) ? "" : $_SESSION['error_msg'] ?>
+                        </p>
                         <div class="form-group">
                             <label for="title">Title</label>
                             <input type="text" name="title" class="form-control" id="title" placeholder="Title">
@@ -47,4 +49,4 @@ require_once('header.php') ?>
 
 </section>
 <!-- /.content -->
-<?php require_once('footer.php');?>
+<?php require_once('footer.php'); ?>

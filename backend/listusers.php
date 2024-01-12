@@ -14,7 +14,7 @@ $users = fetch_all($query);
                 <div class="box-header">
                     <h3 class="box-title">Users</h3>
                     <p class='text-success'>
-                        <?= empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
+                        <?= !isset($_SESSION['success_msg'])|| empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
                     </p>
                 </div>
                 <!-- /.box-header -->

@@ -19,15 +19,19 @@ $user = fetch_record($query, $_GET['id']);
                 <!-- form start -->
                 <form role="form" method="post" action="events.php">
                     <div class="box-body">
-                    <p class='text-danger'><?= empty($_SESSION['error_msg']) ? ($_SESSION['error_msg'] = '') : $_SESSION['error_msg']?></p>
+                        <p class='text-danger'>
+                            <?= !isset($_SESSION['error_msg']) || empty($_SESSION['error_msg']) ? "" : $_SESSION['error_msg'] ?>
+                        </p>
                         <input type="hidden" name="event" value="update_user">
                         <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
                         <div class="form-group has-feedback">
-                            <input type="text" name="full_name" class="form-control" placeholder="Full name" value="<?= $user['full_name']?>">
+                            <input type="text" name="full_name" class="form-control" placeholder="Full name"
+                                value="<?= $user['full_name'] ?>">
                             <span class="glyphicon glyphicon-user form-control-feedback"></span>
                         </div>
                         <div class="form-group has-feedback">
-                            <input type="email" name="email" class="form-control" placeholder="Email" value="<?= $user['email']?>">
+                            <input type="email" name="email" class="form-control" placeholder="Email"
+                                value="<?= $user['email'] ?>">
                             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                         </div>
                         <div class="form-group has-feedback">
