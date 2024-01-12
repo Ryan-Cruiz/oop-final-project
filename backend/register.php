@@ -30,27 +30,64 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="dashboard.php"><b>Admin</b>LTE</a>
+    <a href="dashboard.php"><b>GLC</b></a>
   </div>
-
+  
   <div class="register-box-body">
-    <p class="login-box-msg">Register a new membership</p>
+    
+  <?php 
+  if (isset($_POST["submit"])) {
+    $fullname = $_POST["fullname"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $passwordRepeat= $_POST["Retype_password"];
+
+    $passwordhash = password_hash($password, PASSWORD_DEFAULT);
+    
+    $errors = array();
+
+    if (empty($fullname) OR empty($email) OR empty($password) OR empty($passwordRepeat)) {
+      array_push($errors,"FILL UP ALL FIELDS");
+    }
+
+    if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+      array_push($errors,"email is not valid");
+    }
+
+    if (strlen($password) < 8) {
+      array_push($errors,"Password must be 8 characters long");
+    }
+
+    if($password !== $passwordRepeat) {
+      array_push($errors,"password is not match");
+    }
+
+    if (count($errors) > 0) {
+      foreach ($errors as $error) {
+        echo "<div class='alert alert-danger'>$error</div>";
+    }
+    }else{
+      //we will insert data into database
+
+    }
+  }
+  ?>
 
     <form action="register.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Full name">
+        <input type="text" class="form-control" name="fullname"  placeholder="Full name">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" name="email"  placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" name="password"  placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Retype password">
+        <input type="password" class="form-control" name="Retype_password"  placeholder="Retype password">
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
       </div>
       <div class="row">
@@ -63,7 +100,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat" value="register" name="submit" >Register</button>
         </div>
         <!-- /.col -->
       </div>
