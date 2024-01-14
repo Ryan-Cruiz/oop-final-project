@@ -1,9 +1,13 @@
 <?php session_start();
-$_SESSION['site-title'] = 'List User';
-require_once('../connection.php');
-require_once('header.php');
-$query = "SELECT * FROM users";
-$users = fetch_all($query);
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'List User';
+    require_once('../connection.php');
+    require_once('header.php');
+    $query = "SELECT * FROM users";
+    $users = fetch_all($query);
+}
 
 ?>
 <!-- Main content -->
@@ -14,7 +18,7 @@ $users = fetch_all($query);
                 <div class="box-header">
                     <h3 class="box-title">Users</h3>
                     <p class='text-success'>
-                        <?= !isset($_SESSION['success_msg'])|| empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
+                        <?= !isset($_SESSION['success_msg']) || empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
                     </p>
                 </div>
                 <!-- /.box-header -->

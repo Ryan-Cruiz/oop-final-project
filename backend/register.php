@@ -37,8 +37,9 @@
     </div>
 
     <div class="register-box-body">
-
       <?php
+      session_start();
+      require_once('../connection.php');
       if (isset($_POST["submit"])) {
         $fullname = $_POST["fullname"];
         $email = $_POST["email"];
@@ -57,22 +58,30 @@
           array_push($errors, "email is not valid");
         }
 
-        if (strlen($password) < 8) {
-          array_push($errors, "Password must be 8 characters long");
-        }
-
-        if ($password !== $passwordRepeat) {
-          array_push($errors, "password is not match");
-        }
-
         if (count($errors) > 0) {
           foreach ($errors as $error) {
             echo "<div class='alert alert-danger'>$error</div>";
           }
         } else {
-          //we will insert data into database
-          //we live we love we lie
-      
+          $chck_stmt = $connection->prepare("SELECT * FROM users WHERE email = ?");
+          $chck_stmt->execute([$email]);
+          $check_email = $chck_stmt->fetch();
+          if (!$check_email) {
+            $sql = "INSERT INTO users(full_name, email, password, created_at) VALUES ( ?, ?, ?, datetime('now') )";
+            $stmt = $connection->prepare($sql);
+            $stmt->execute([$fullname, $email, $passwordhash]);
+            $id = $connection->lastinsertId();
+            $_SESSION["user_id"] = $id;
+            $currentUser_query = "SELECT * FROM users WHERE id = ? ";
+            $logstmt = $connection->prepare($currentUser_query);
+            $logstmt->execute([$id]);
+            $current_user = $logstmt->fetch();
+            $_SESSION['name_of_user'] = $current_user['full_name'];
+            $_SESSION['date_registered'] = $current_user['created_at'];
+            header("Location: dashboard.php ");
+          } else {
+            header("location: register.php");
+          }
         }
       }
       ?>

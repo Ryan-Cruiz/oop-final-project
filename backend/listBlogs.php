@@ -1,13 +1,17 @@
 <?php
 session_start();
-$_SESSION['site-title'] = 'List Blog';
-require_once('../connection.php');
-require_once('header.php');
-$query = "SELECT blogs.id,full_name,title,description,blogs.created_at 
-FROM blogs 
-INNER JOIN users ON users.id = user_id 
-ORDER BY blogs.created_at DESC";
-$blogs = fetch_all($query);
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'List Blog';
+    require_once('../connection.php');
+    require_once('header.php');
+    $query = "SELECT blogs.id,full_name,title,description,blogs.created_at 
+    FROM blogs 
+    INNER JOIN users ON users.id = user_id 
+    ORDER BY blogs.created_at DESC";
+    $blogs = fetch_all($query);
+}
 ?>
 <!-- Main content -->
 <section class="content">
@@ -17,7 +21,7 @@ $blogs = fetch_all($query);
                 <div class="box-header">
                     <h3 class="box-title">Blogs</h3>
                     <p class='text-success'>
-                        <?= empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
+                        <?= !isset($_SESSION['success_msg']) || empty($_SESSION['success_msg']) ? "" : $_SESSION['success_msg'] ?>
                     </p>
                 </div>
                 <!-- /.box-header -->

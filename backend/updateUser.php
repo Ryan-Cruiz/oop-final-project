@@ -1,9 +1,13 @@
 <?php session_start();
-$_SESSION['site-title'] = 'Update User';
-require_once('../connection.php');
-require_once('header.php');
-$query = "SELECT full_name,email FROM users WHERE id = ? ";
-$user = fetch_record($query, $_GET['id']);
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'Update User';
+    require_once('../connection.php');
+    require_once('header.php');
+    $query = "SELECT full_name,email FROM users WHERE id = ? ";
+    $user = fetch_record($query, $_GET['id']);
+}
 ?>
 <!-- Main content -->
 <section class="content">
