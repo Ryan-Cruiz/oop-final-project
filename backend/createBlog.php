@@ -1,7 +1,11 @@
 <?php
 session_start();
-$_SESSION['site-title'] = 'Create Blog';
-require_once('header.php') ?>
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'Create Blog';
+    require_once('header.php');
+} ?>
 <!-- Main content -->
 <section class="content">
     <!-- Main row -->

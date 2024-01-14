@@ -13,7 +13,6 @@ if ($_POST['event'] === "create_blog") {
         $file_path = moveImageFile();
         $_SESSION['error_msg'] = "";
         $_SESSION['success_msg'] = "Blog Added";
-        $_SESSION['user_id'] = '1'; // make this dynamic
         $query = "INSERT INTO blogs(user_id,title,description,img_url,created_at) VALUES (?,?,?,?,datetime('now'))";
         $data = array($_SESSION['user_id'], $_POST['title'], $_POST['description'], $file_path);
         queryData($query, $data);

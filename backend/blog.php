@@ -1,12 +1,16 @@
 <?php
 session_start();
-$_SESSION['site-title'] = 'List Blog';
-require_once('../connection.php');
-require_once('header.php');
-$query = "SELECT blogs.id,img_url,full_name,title,description,blogs.created_at 
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'List Blog';
+    require_once('../connection.php');
+    require_once('header.php');
+    $query = "SELECT blogs.id,img_url,full_name,title,description,blogs.created_at 
 FROM blogs 
 INNER JOIN users ON users.id = user_id WHERE blogs.id = ?";
-$blog = fetch_record($query, $_GET['id']);
+    $blog = fetch_record($query, $_GET['id']);
+}
 // var_dump($blog);
 ?>
 <!-- Main content -->
@@ -26,11 +30,11 @@ $blog = fetch_record($query, $_GET['id']);
                         </span></p>
                 </div>
                 <div class="box-body">
-                    <?php if(!is_null($blog['img_url'])) {?>
-                    <div class="text-center">
-                        <img src="<?= $blog['img_url'] ?>" alt="image header" style="width: 300px; height:300px;">
-                    </div>
-                    <?php }?>
+                    <?php if (!is_null($blog['img_url'])) { ?>
+                        <div class="text-center">
+                            <img src="<?= $blog['img_url'] ?>" alt="image header" style="width: 300px; height:300px;">
+                        </div>
+                    <?php } ?>
                     <p class='text-start'>
                         <?= $blog['description'] ?>
                     </p>

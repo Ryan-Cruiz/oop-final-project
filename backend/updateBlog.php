@@ -1,10 +1,14 @@
 <?php
 session_start();
-$_SESSION['site-title'] = 'Update Blog';
-require_once('../connection.php');
-require_once('header.php');
-$query = "SELECT * FROM blogs WHERE id = ?";
-$blog = fetch_record($query, $_GET['id']);
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
+    $_SESSION['site-title'] = 'Update Blog';
+    require_once('../connection.php');
+    require_once('header.php');
+    $query = "SELECT * FROM blogs WHERE id = ?";
+    $blog = fetch_record($query, $_GET['id']);
+}
 ?>
 <!-- Main content -->
 <section class="content">
@@ -27,8 +31,8 @@ $blog = fetch_record($query, $_GET['id']);
                         </p>
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" name="title" value="<?= $blog['title'] ?>" class="form-control" id="title"
-                                placeholder="Title">
+                            <input type="text" name="title" value="<?= $blog['title'] ?>" class="form-control"
+                                id="title" placeholder="Title">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Description</label>

@@ -1,6 +1,10 @@
 <?php session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+} else {
 $_SESSION['site-title'] = 'Create User';
 require_once('header.php');
+}
 ?>
 <!-- Main content -->
 <section class="content">

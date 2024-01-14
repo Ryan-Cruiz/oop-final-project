@@ -6,6 +6,9 @@
 - Macalinao, Leo
 - Mejos, Ronel
 ### DATABASE
-Using a sqlite database the "database.db"
+Using a sqlite database the "database.db" and PDO
 
-if not satisfied glcPortal.sql is for the xampp
+### FEATURES
+- login/register
+- CRUD user
+- CRUD blog
