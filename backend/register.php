@@ -30,12 +30,18 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="dashboard.php"><b>GLC</b></a>
+    <a href="dashboard.php"><b>GOLDEN LINK COLLEGE</b></a>
   </div>
   
   <div class="register-box-body">
     
   <?php 
+  session_start();
+  
+
+  
+  
+
   if (isset($_POST["submit"])) {
     $fullname = $_POST["fullname"];
     $email = $_POST["email"];
@@ -67,9 +73,18 @@
         echo "<div class='alert alert-danger'>$error</div>";
     }
     }else{
-      //we will insert data into database
-      //we live we love we lie
+      require_once('../connection.php');   
+      $sql = " INSERT INTO users(full_name, email, password, created_at) VALUES ( ?, ?, ?, datetime('now') )";
+      $stmt= $connection->prepare($sql);
+      $stmt->execute([$fullname, $email, $password]);
+      $id = $connection->lastinsertId(); 
+      $_SESSION["user_id"] = $id;
+      $query = " SELECT * FROM users where id = ? ";
+      $logstmt= $connection->prepare($sql);
+      $result = $logstmt->execute([$id]); 
 
+      var_dump($_SESSION);
+      header("Location: dashboard.php ");
     }
   }
   ?>
