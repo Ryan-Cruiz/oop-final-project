@@ -12,3 +12,7 @@ Using a sqlite database the "database.db" and PDO
 - login/register
 - CRUD user
 - CRUD blog
+
+
+# Get Started
+Open the xampp apache server and that's it. You can use it
