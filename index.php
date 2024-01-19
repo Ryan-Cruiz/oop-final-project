@@ -206,7 +206,7 @@
             <h2 ><img src="assets/img/intrams.jpg" ></h2>
               <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid02AJa1gYKn1qhno7vnQAiHTxYvhFTaeun6pPxvRCUHbdyMvwRDYNdjZRXCaYbNBhNbl"
               rel="noopener" target="_blank"> Intramurals</a></h4>
-              <p style="text-align:center;"  >First ever Collegiate Intrams</p>
+              <p style="text-align:center;"  >First ever College level Intramulas</p>
             </div>
           </div>
 
