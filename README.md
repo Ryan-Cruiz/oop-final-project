@@ -12,3 +12,6 @@ Using a sqlite database the "database.db" and PDO
 - login/register
 - CRUD user
 - CRUD blog
+
+# Get Started
+copy and rename the example.database.db to database.db then open apache server in xampp and good to go. Happy Coding! 
