@@ -13,6 +13,5 @@ Using a sqlite database the "database.db" and PDO
 - CRUD user
 - CRUD blog
 
-
 # Get Started
-Open the xampp apache server and that's it. You can use it
+copy and rename the example.database.db to database.db then open apache server in xampp and good to go. Happy Coding! 

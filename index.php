@@ -49,13 +49,17 @@
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">GLC<span>.</span></a></h1>
+            <h1 class="logo" style><a href="index.html"><img src="assets/img/glc.png" > Golden Link College<span></span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#aboutus">About</a></li>
+                    <li><a class="nav-link scrollto" href="#mission">Mission and Vision</a></li>
+                    <li><a class="nav-link scrollto" href="#programs">Programs</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Events</a></li>
                     <li><a class="nav-link scrollto" href="#blog">Blogs</a></li>
                     <li><a href="backend/login.php">Login</a></li>
                 </ul>
@@ -69,7 +73,7 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>Welcome to <span>Golden Link College</span></h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, praesentium.</h2>
+            <h2>BE THE BEST THAT YOU CAN BE.</h2>
             <div class="d-flex">
                 <a href="#blog" class="btn-get-started scrollto">Get Started</a>
             </div>
@@ -77,10 +81,183 @@
 
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="blog" class="about section-bg">
+        <section  class="about section-bg">
             <div class="container" data-aos="fade-up">
+                <div class="courses" id="aboutus" >
+                    <h4>About</h4>
+                    <h1>The Golden Link <span>College</span> </h1>
+                    <h2>adopts an educational approach that</h2>
 
-                <div class="section-title">
+                    <div class="column1 "  >
+                        <p>• Gives importance to the development of life skills and character building, such as self-awareness, integration of values, effective relationships, conflict resolution, public speaking, etc., side by side with academic competencies;
+                       <br>• Motivates students to study by awakening their interest in the subject matter instead of using rewards and punishments or threats;
+                       <br>• Does not use rankings, honors or medals to compare a student with another;</p>
+                    </div>    
+                    <div class="column1"  >
+                        <p>• Creates an atmosphere of care, fun and challenge that enables students to dare to try new things without the fear of being humiliated or punished;
+                       <br>• Involves the parents and family in the education of the children, by holding parenting seminars and family day programs;
+                       <br>• Enables students to be aware of the larger picture such as the environment, meaning of life, comparative religion, world peace and similar themes.</p><br>
+                    </div>  
+                </div>    
+                <br>
+                &nbsp;
+                <div class="container">
+                <div class="mission container" id="mission">
+                    <h2>Mission and Vision</h2>
+                    <h1>Mission and Vision</h1>
+                    <div class="column1 "  >
+                        <p>• To educate and bring up children and young adults to become competent, well balanced, emotionally mature, socially responsible, morally upright and spiritually sensitive individuals.
+                        <br>
+                        <br>
+                        • To develop and promote an enlightened educational system that teaches the art and science of wise living in addition to achieving academic excellence- a system that can be shared with other institutions for the benefit of individuals and society</p>
+                         
+                    </div>
+                    <div class="column1 "  >
+                        <p>• To be a center of peace and harmony where people of different cultures will leave and learn together to help promote world peace and brotherhood without distinction of religion, race, sex or nationality, in the light of the ageless wisdom of life.
+                        <br>
+                        <br>
+                    • To help provide quality and right education to the less privileged children.</p>                      
+                    </div>
+                </div>
+            </div>
+              <br>  
+            <section id="programs" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Programs</h2>
+          <h3>Programs <span>Offered</span></h3>
+          <p>The Golden Link College offers courses on the following levels:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/beed.png" style="width:60px" ></h2>
+              <h4><a href=""> Bachelor of Elementary Education</a></h4>
+              <p style="text-align:center;"  >• Major in General Education &nbsp;<br>  • Major in Preschool Education</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/bsed.png" style="width:80px" ></h2>
+              <h4><a href="">Bachelor of Secondary Education</a></h4>
+              <p style="text-align:center;">• Major in English<br>• Major in Mathematics<br>• Major in Science</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/bsais.png" style="width:80px" ></h2>
+              <h4><a href="">Bachelor of Science in Accounting Information Systems</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/bsba.png" style="width:60px" > </a></h2>
+              <h4><a href="">Bachelor of Science in Business Administration</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/psych.png" style="width:60px"> </a></h2>
+              <h4><a href="">Bachelor of Science in Psychology</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/bsit.png" style="width:60px" ></h2>
+              <h4><a href="">Bachelor of Science in Information Technology</a></h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+                    <div class="img-with-text column"  >
+                        <h2>Elementary</h2>
+                        <img src="assets/img/elementary.JPG" style=" width:350px; height:auto">  
+                    </div>
+                    <div class="img-with-text column">
+                        <h2>Secondary</h2>
+                        <img src="assets/img/secondary.JPG" style=" width:350px; height:auto">
+                    </div>
+                    <div class="img-with-text column">
+                        <h2>College</h2>
+                        <img src="assets/img/tertiary.JPG" style=" width:350px; height:auto">
+                    </div>
+                </div>
+                &nbsp;
+    <div  id="events" class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Events</h2>
+          <h3>Events & <span>Activities</span></h3>
+          <p>The Golden Link College  fun and meaningful activies taken place inside the Campus</p>
+        </div>
+
+        <div class="row" style="text-align:center;" >
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/intrams.jpg" ></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid02AJa1gYKn1qhno7vnQAiHTxYvhFTaeun6pPxvRCUHbdyMvwRDYNdjZRXCaYbNBhNbl"
+              rel="noopener" target="_blank"> Intramurals</a></h4>
+              <p style="text-align:center;"  >First ever College level Intramulas</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/declamation.JPG"  ></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid0CoVY8hksPizVQNnswhnHqkwL5GWcy74FBAc2zwedU9BecGEtTqaWqZEBwcGEwCQtl" 
+              rel="noopener" target="_blank">Declamation</a></h4>
+              <p style="text-align:center;">A annual event that has been practiced by Linkers</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/pinning.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid06nnWGpXaww2JVzrjNL8DFEkABR7yEwHwXWiS3kQNYXxzxZEbATNJw2sjJkqf3bx4l" 
+              rel="noopener" target="_blank">Pinning Ceremony </a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">  
+            <h2 class="logo"><img src="assets/img/yearend.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid022X6WbwtZyMKLMTW2nMGfPxHW75h6UHXHvHXK1o55CWChGhrD3jMADEXWvDtcaSzDl" 
+              rel="noopener" target="_blank">Year End Party</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/musicfest.JPG"> </a></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid028vJPKabRfN6k2Eg6uoc7TWgsjRjb4vEBa2GKzkbEX2reeWWPZ2LvtKwFgLkLPoZrl"
+               rel="noopener" target="_blank">Music Fest</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/educ week.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid0fMMZgKX7QLJyDZiGbsrUgx1ZmWzbcJuUeCdW5zJckVRD6rDLyqi5ZZyReJFeymCbl" 
+              rel="noopener" target="_blank">Educ Week</a></h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+                <div id="blog" class="section-title">
                     <h2>Blogs</h2>
                     <h3>See Our Latest <span>Blogs</span></h3>
                 </div>
@@ -107,10 +284,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Interested on being a Linker?</h4>
+                        <p>enter your email for more updates.</p>
                         <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                            <input type="email" name="email"><input type="submit" value="submit">
                         </form>
                     </div>
                 </div>
@@ -122,35 +299,31 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>BizLand<span>.</span></h3>
+                        <h3>GLC<span>.</span></h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Waling Waling St., Along Dona Aurora St. <br>
+                            Camarin Caloocan City Brgy.177<br>
+                            Philippines <br><br>
+                            <strong>Phone:</strong> (+632) 8961-5836<br>
+                            <strong>Email:</strong> GLC@example.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#main">About us</a></li>
+                           
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Programs offered</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#mission">Mission and Vision</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#events">Events</a></li>
                         </ul>
                     </div>
 
@@ -172,14 +345,10 @@
 
         <div class="container py-4">
             <div class="copyright">
-                &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Golden Link College</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+               
             </div>
         </div>
     </footer><!-- End Footer -->
