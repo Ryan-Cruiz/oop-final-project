@@ -206,6 +206,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+ 
 }
 
 .navbar ul {
@@ -283,7 +284,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #1752EB;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -455,20 +456,152 @@ h6 {
   display: block;
 }
 
+/* course talaga to curses lang*/
+.curse{
+  color: #062b5b;
+  margin-top: 50px;
+}
+.curse h1 { 
+  text-align:center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.curse h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+ 
+  
+}
+
+.column2 {
+  
+  width: 33%;
+  height: auto;
+  display: inline-block;
+  padding: 20px;
+
+}
+.curse:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+/* mission and vision */
+.mission { 
+  color: #062b5b;
+  margin-top: 70px;
+  
+}
+.mission h1 { 
+  text-align:center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.mission p{
+  text-align: left;
+  text-indent: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  -ms-text-kashida-space: 10%;
+  color:#222222;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  height: auto;
+  
+}
+.mission:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+/* courses*/
+
+.courses { 
+  text-align: center;
+  color: #062b5b;
+}
+.courses p{
+  text-align: left;
+  text-indent: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  -ms-text-kashida-space: 10%;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#222222;
+}
+.courses h1{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.elementary{
+  
+  width: 33%;
+  background-size: auto;
+}
+.courses.h2{
+ size: 20px;
+
+}
+.column {
+  float: left;
+  width: 33%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Clear floats after the columns */
+.courses:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
-  background-size: cover;
+  background: url('../img/main_campus.jpg');
+  background-size:auto;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(214, 217, 250, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -490,11 +623,11 @@ h6 {
 }
 
 #hero h1 span {
-  color: #106eea;
+  color: #1752EB;
 }
 
 #hero h2 {
-  color: #555555;
+  color: #ffe603;
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -511,7 +644,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #106eea;
+  background: #1752EB;
 }
 
 #hero .btn-get-started:hover {
