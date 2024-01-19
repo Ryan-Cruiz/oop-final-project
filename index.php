@@ -56,7 +56,11 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#blog">About</a></li>
+                    <li><a class="nav-link scrollto" href="#aboutus">About</a></li>
+                    <li><a class="nav-link scrollto" href="#mission">Mission and Vision</a></li>
+                    <li><a class="nav-link scrollto" href="#programs">Programs</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Events</a></li>
+                    <li><a class="nav-link scrollto" href="#blog">Blogs</a></li>
                     <li><a href="backend/login.php">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,10 +81,10 @@
 
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="blog" class="about section-bg">
+        <section  class="about section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="courses" id="aboutus" >
-
+                    <h4>About</h4>
                     <h1>The Golden Link <span>College</span> </h1>
                     <h2>adopts an educational approach that</h2>
 
@@ -93,11 +97,13 @@
                         <p>• Creates an atmosphere of care, fun and challenge that enables students to dare to try new things without the fear of being humiliated or punished;
                        <br>• Involves the parents and family in the education of the children, by holding parenting seminars and family day programs;
                        <br>• Enables students to be aware of the larger picture such as the environment, meaning of life, comparative religion, world peace and similar themes.</p><br>
-                    </div>      
+                    </div>  
+                </div>    
                 <br>
                 &nbsp;
-                <div class container>
+                <div class="container">
                 <div class="mission container" id="mission">
+                    <h2>Mission and Vision</h2>
                     <h1>Mission and Vision</h1>
                     <div class="column1 "  >
                         <p>• To educate and bring up children and young adults to become competent, well balanced, emotionally mature, socially responsible, morally upright and spiritually sensitive individuals.
@@ -115,9 +121,8 @@
                 </div>
             </div>
               <br>  
-            <section id="services" class="services">
+            <section id="programs" class="services">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Programs</h2>
           <h3>Programs <span>Offered</span></h3>
@@ -169,8 +174,6 @@
             <div class="icon-box">
             <h2 class="logo"><img src="assets/img/bsit.png" style="width:60px" ></h2>
               <h4><a href="">Bachelor of Science in Information Technology</a></h4>
-              
-              
             </div>
           </div>
 
@@ -189,9 +192,71 @@
                         <img src="assets/img/tertiary.JPG" style=" width:350px; height:auto">
                     </div>
                 </div>
-   
+                &nbsp;
+    <div  id="events" class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Events</h2>
+          <h3>Events & <span>Activities</span></h3>
+          <p>The Golden Link College  fun and meaningful activies taken place inside the Campus</p>
+        </div>
 
-              <br>
+        <div class="row" style="text-align:center;" >
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/intrams.jpg" ></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid02AJa1gYKn1qhno7vnQAiHTxYvhFTaeun6pPxvRCUHbdyMvwRDYNdjZRXCaYbNBhNbl"
+              rel="noopener" target="_blank"> Intramurals</a></h4>
+              <p style="text-align:center;"  >First ever Collegiate Intrams</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/declamation.JPG"  ></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid0CoVY8hksPizVQNnswhnHqkwL5GWcy74FBAc2zwedU9BecGEtTqaWqZEBwcGEwCQtl" 
+              rel="noopener" target="_blank">Declamation</a></h4>
+              <p style="text-align:center;">A annual event that has been practiced by Linkers</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/pinning.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid06nnWGpXaww2JVzrjNL8DFEkABR7yEwHwXWiS3kQNYXxzxZEbATNJw2sjJkqf3bx4l" 
+              rel="noopener" target="_blank">Pinning Ceremony </a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">  
+            <h2 class="logo"><img src="assets/img/yearend.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid022X6WbwtZyMKLMTW2nMGfPxHW75h6UHXHvHXK1o55CWChGhrD3jMADEXWvDtcaSzDl" 
+              rel="noopener" target="_blank">Year End Party</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/musicfest.JPG"> </a></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid028vJPKabRfN6k2Eg6uoc7TWgsjRjb4vEBa2GKzkbEX2reeWWPZ2LvtKwFgLkLPoZrl"
+               rel="noopener" target="_blank">Music Fest</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/educ week.jpg"></h2>
+              <h4><a href="https://www.facebook.com/GLCNewGenTransformation/posts/pfbid0fMMZgKX7QLJyDZiGbsrUgx1ZmWzbcJuUeCdW5zJckVRD6rDLyqi5ZZyReJFeymCbl" 
+              rel="noopener" target="_blank">Educ Week</a></h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
                 <div id="blog" class="section-title">
                     <h2>Blogs</h2>
                     <h3>See Our Latest <span>Blogs</span></h3>
@@ -247,7 +312,7 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#main">About us</a></li>
                            
                         </ul>
@@ -258,7 +323,7 @@
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#services">Programs offered</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#mission">Mission and Vision</a></li>
-                            
+                            <li><i class="bx bx-chevron-right"></i> <a href="#events">Events</a></li>
                         </ul>
                     </div>
 

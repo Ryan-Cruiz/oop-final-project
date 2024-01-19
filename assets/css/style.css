@@ -509,6 +509,18 @@ h6 {
   line-height: 56px;
   margin-top: 20px;
 }
+.mission h2{
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: #106eea;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
 .mission p{
   text-align: left;
   text-indent: 10px;
@@ -540,6 +552,18 @@ h6 {
 .courses { 
   text-align: center;
   color: #222222;
+}
+.courses h4{
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: #106eea;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
 .courses p{
@@ -745,6 +769,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+    
 }
 
 .section-title h2 {
