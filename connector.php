@@ -36,7 +36,7 @@ function fetch_record($query)
 }
 //used to run INSERT/DELETE/UPDATE, queries that don't return a value
 //returns a value, the id of the most recently inserted record in your database
-function run_mysql_query($query)
+function queryData($query)
 {
     global $connection;
     $result = $connection->query($query);
