@@ -80,6 +80,7 @@
         <section id="blog" class="about section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="courses" id="aboutus" >
+
                     <h1>The Golden Link <span>College</span> </h1>
                     <h2>adopts an educational approach that</h2>
 
@@ -109,7 +110,7 @@
                         <p>• To be a center of peace and harmony where people of different cultures will leave and learn together to help promote world peace and brotherhood without distinction of religion, race, sex or nationality, in the light of the ageless wisdom of life.
                         <br>
                         <br>
-                    • To help provide quality and right education to the less privileged children</p>                      
+                    • To help provide quality and right education to the less privileged children.</p>                      
                     </div>
                 </div>
             </div>
