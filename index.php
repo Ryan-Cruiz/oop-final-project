@@ -80,81 +80,115 @@
         <section id="blog" class="about section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="courses" id="aboutus" >
-                    <h1>The Golden Link College</h1>
+                    <h1>The Golden Link <span>College</span> </h1>
                     <h2>adopts an educational approach that</h2>
+
                     <div class="column1 "  >
                         <p>• Gives importance to the development of life skills and character building, such as self-awareness, integration of values, effective relationships, conflict resolution, public speaking, etc., side by side with academic competencies;
-<br>
-
-• Motivates students to study by awakening their interest in the subject matter instead of using rewards and punishments or threats;
-<br>• Does not use rankings, honors or medals to compare a student with another;</p>
+                       <br>• Motivates students to study by awakening their interest in the subject matter instead of using rewards and punishments or threats;
+                       <br>• Does not use rankings, honors or medals to compare a student with another;</p>
                     </div>    
                     <div class="column1"  >
                         <p>• Creates an atmosphere of care, fun and challenge that enables students to dare to try new things without the fear of being humiliated or punished;
-
-<br>• Involves the parents and family in the education of the children, by holding parenting seminars and family day programs;
-<br>• Enables students to be aware of the larger picture such as the environment, meaning of life, comparative religion, world peace and similar themes.</p>
-                    </div>   
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="column Elementary"  >
-                        <h2>Elementary</h2>
-                        <img src="assets/img/elementary.JPG" style=" width:400px; height:200">  
-                    </div>
-                    <div class="column">
-                        <h2>Secondary</h2>
-                        <img src="assets/img/secondary.JPG" style=" width:400px; height:200">
-                    </div>
-                    <div class="column">
-                        <h2>Tertiary</h2>
-                        <img src="assets/img/tertiary.JPG" style=" width:400px; height:200">
-                    </div>
-                </div>
+                       <br>• Involves the parents and family in the education of the children, by holding parenting seminars and family day programs;
+                       <br>• Enables students to be aware of the larger picture such as the environment, meaning of life, comparative religion, world peace and similar themes.</p><br>
+                    </div>      
                 <br>
-                <div class="mission" id="mission">
-                    <h1 style="text-align:center;">Mission and Vision</h1>
+                &nbsp;
+                <div class container>
+                <div class="mission container" id="mission">
+                    <h1>Mission and Vision</h1>
                     <div class="column1 "  >
                         <p>• To educate and bring up children and young adults to become competent, well balanced, emotionally mature, socially responsible, morally upright and spiritually sensitive individuals.
                         <br>
                         <br>
-• To develop and promote an enlightened educational system that teaches the art and science of wise living in addition to achieving academic excellence- a system that can be shared with other institutions for the benefit of individuals and society</p>
+                        • To develop and promote an enlightened educational system that teaches the art and science of wise living in addition to achieving academic excellence- a system that can be shared with other institutions for the benefit of individuals and society</p>
                          
                     </div>
                     <div class="column1 "  >
                         <p>• To be a center of peace and harmony where people of different cultures will leave and learn together to help promote world peace and brotherhood without distinction of religion, race, sex or nationality, in the light of the ageless wisdom of life.
                         <br>
                         <br>
-• To help provide quality and right education to the less privileged children</p>                      
+                    • To help provide quality and right education to the less privileged children</p>                      
                     </div>
                 </div>
-              <br>
-            <div id="curse" class="curse">
-                <h1>Programs Offered</h1>
-                 <div class="column2 curse">
-                 <h2 class="logo"><img src="assets/img/bsit.png" style="width:50px" > BSIT</a></h2>
-                 </div>   
-                 <div class="column2 curse" >
-                    <h2 class="logo"><img src="assets/img/psych.png" style="width:40px"> BSPSYCH</a></h2>
-                 </div>   
-                 <div class="column2 curse" >
-                    <h2 class="logo"><img src="assets/img/bsba.png" style="width:40px" > BSBA</a></h2>
-                 </div>   
+            </div>
+              <br>  
+            <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Programs</h2>
+          <h3>Programs <span>Offered</span></h3>
+          <p>The Golden Link College offers courses on the following levels:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/beed.png" style="width:60px" ></h2>
+              <h4><a href=""> Bachelor of Elementary Education</a></h4>
+              <p style="text-align:center;"  >• Major in General Education &nbsp;<br>  • Major in Preschool Education</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/bsed.png" style="width:80px" ></h2>
+              <h4><a href="">Bachelor of Secondary Education</a></h4>
+              <p style="text-align:center;">• Major in English<br>• Major in Mathematics<br>• Major in Science</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 ><img src="assets/img/bsais.png" style="width:80px" ></h2>
+              <h4><a href="">Bachelor of Science in Accounting Information Systems</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/bsba.png" style="width:60px" > </a></h2>
+              <h4><a href="">Bachelor of Science in Business Administration</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/psych.png" style="width:60px"> </a></h2>
+              <h4><a href="">Bachelor of Science in Psychology</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+            <h2 class="logo"><img src="assets/img/bsit.png" style="width:60px" ></h2>
+              <h4><a href="">Bachelor of Science in Information Technology</a></h4>
+              
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+                    <div class="img-with-text column"  >
+                        <h2>Elementary</h2>
+                        <img src="assets/img/elementary.JPG" style=" width:350px; height:auto">  
+                    </div>
+                    <div class="img-with-text column">
+                        <h2>Secondary</h2>
+                        <img src="assets/img/secondary.JPG" style=" width:350px; height:auto">
+                    </div>
+                    <div class="img-with-text column">
+                        <h2>College</h2>
+                        <img src="assets/img/tertiary.JPG" style=" width:350px; height:auto">
+                    </div>
+                </div>
    
-                 <div class="column2 " >
-                    <h2 ><img src="assets/img/bsais.jpg" style="width:60px" > BSAIS</a></h2>
-                 </div>   
-                 
-                 <div class="column2 " >
-                    <h2 ><img src="assets/img/bsed.png" style="width:50px" > BSED</a></h2>
-                 </div>   
-                 
-                 <div class="column2 " >
-                    <h2 ><img src="assets/img/beed.png" style="width:40px" > BEED</a></h2>
-                 </div>  
-            </div>   
 
               <br>
                 <div id="blog" class="section-title">
@@ -221,7 +255,7 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#curse">Programs offered</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Programs offered</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#mission">Mission and Vision</a></li>
                             
                         </ul>
